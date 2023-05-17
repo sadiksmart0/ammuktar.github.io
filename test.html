@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Projects</title>
+  <style>
+    /* CSS styles here */
+
+    /* Reset some default styles */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .dropdowns {
+      display: flex;
+      flex-direction: column;  /* Update to vertical */
+      align-items: center;     /* Update to center alignment */
+      margin-bottom: 30px;
+    }
+
+    .dropdown {
+      position: relative;
+      margin-bottom: 20px;     /* Add margin-bottom to create spacing */
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 500px;
+      max-height: 400px;
+      overflow-y: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 100%;              /* Push down the dropdown content */
+      left: 0;                /* Align with the button */
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px 40px;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 10px;  /* Add border-radius for rounded edges */
+    }
+
+    .project-tiles {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+
+    .tile {
+      background-color: #0e0d0d;
+      padding: 20px;
+      box-shadow: 0px 2px 4px rgba(163, 158, 158, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .tile:hover {
+      transform: translateY(-5px);
+    }
+
+    .tile-image {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .tile-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #007bff;
+    }
+
+    .tile-tools {
+      color: #a8a7a7;
+      font-size: 14px;
+    }
+
+    .tile-details {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .tile:hover .tile-details {
+      display: block;
+    }
+
+    /* Media Query for responsiveness */
+    @media (max-width: 768px) {
+      .project-tiles {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button class="dropdown-button">Data Analytics</button>
+          <div class="dropdown-content">
+            <div class="project-tiles">
+              <!-- Data Analytics Projects -->
+              <div class="tile">
+                <img class="tile-image" src="images/superstore.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">ANALYSIS OF SUPERSTORE PROFITS – Personal Project (April 2023)</h3>
+                <p class="tile-tools">Tools used: Power BI</p>
+                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                        <li>Conducted an in-depth analysis of Superstore profits by utilizing Power BI to clean, explore, and analyze sales data within a specific timeframe.</li>
+                        <li>data cleansing techniques to ensure data quality and integrity for accurate insights.</li>
+                        <li>Employed advanced data visualization techniques in Power BI to create insightful charts, graphs, and interactive dashboards.</li>
+                        <li>Identified top-performing products and categories based on profit margins and sales performance.</li>
+                        <li>Generated comprehensive reports and dashboards to present findings and key insights to stakeholders.</li>
+                        <li>Provided actionable recommendations to optimize profit margins and enhance overall business performance.</li>
+                        <li>Effectively communicated complex analytical findings to non-technical stakeholders in a clear and concise manner.</li>
+                        <li>Demonstrated strong attention to detail and analytical skills throughout the project, ensuring data accuracy and reliability.</li>
+                        <li>Successfully published the reports and dashboards for easy access and sharing among team members.</li>
+                    </ul>
+                </div>
+              </div>
+              <!-- Add more tiles for Data Analytics projects -->
+              <div class="tile">
+                <img class="tile-image" src="images/london_bikes.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">ANALYSIS OF LONDON BIKE SHARING DATA – Personal Project</h3>
+                <p class="tile-tools">Tools used: Power BI</p>
+                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                      <li>Power BI to create an interactive and visually appealing dashboard for analyzing London bike sharing data.</li>
+                      <li>Processed and transformed the raw data to ensure its suitability for analysis, including data cleaning, formatting, and structuring.</li>
+                      <li>Developed insightful visualizations that depicted the demand for bikes based on various factors such as time of the year, month, and day.</li>
+                      <li>Identified peak hours and periods of high bike demand, providing valuable insights for resource allocation and planning.</li>
+                      <li>Conducted statistical analysis to identify patterns and trends in bike usage, helping to optimize bike availability during peak periods.</li>
+                      <li>Advised on the optimal timing for bike maintenance, considering usage patterns and minimizing operational disruptions.</li>
+                       </ul>
+                </div>
+              </div>
+              <!-- Add more tiles for Data Analytics projects -->
+              <div class="tile">
+                <img class="tile-image" src="images/ligue_1.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
+                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
+                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
+                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
+                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
+                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
+                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
+                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
+                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
+                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
+                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-button">Data Science</button>
+          <div class="dropdown-content">
+            <div class="project-tiles">
+              <!-- Data Science Projects -->
+              <div class="tile">
+                <img class="tile-image" src="project1_image.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">USED CAR PRICES PREDICTION MODEL - LINEAR REGRESSION</h3>
+                <p class="tile-tools">Tools used: Tool 1, Tool 2</p>
+                <div class="tile-details">
+                  <p>Project 1 details and description go here.</p>
+                </div>
+              </div>
+              <!-- Add more tiles for Data Analytics projects -->
+              <div class="tile">
+                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">BANK MARKETING CAMPAIGN MODEL  - LOGISTIC REGRESSION</h3>
+                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
+                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
+                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
+                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
+                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
+                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
+                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
+                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
+                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
+                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                </div>
+              </div> 
+              <!-- Add more tiles for Data Analytics projects -->
+              <div class="tile">
+                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
+                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
+                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
+                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
+                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
+                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
+                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
+                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
+                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
+                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
+                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                </div>
+              </div>               
+  
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-button">Data Engineering</button>
+          <div class="dropdown-content">
+            <div class="project-tiles">
+              <!-- Data Engineering Projects -->
+              <div class="tile">
+                <img class="tile-image" src="project1_image.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">Project 1</h3>
+                <p class="tile-tools">Tools used: Tool 1, Tool 2</p>
+                <div class="tile-details">
+                  <p>Project 1 details and description go here.</p>
+                </div>
+              </div>
+              <!-- Add more tiles for Data Engineering projects -->
+              <!-- Add more tiles for Data Analytics projects -->
+              <div class="tile">
+                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
+                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
+                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
+                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
+                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
+                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
+                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
+                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
+                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
+                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
+                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                </div>
+              </div> 
+              <!-- Add more tiles for Data Analytics projects -->
+              <div class="tile">
+                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
+                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
+                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
+                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
+                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
+                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
+                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
+                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
+                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
+                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
+                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                </div>
+              </div>                 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+  
