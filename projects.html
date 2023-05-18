@@ -110,6 +110,13 @@
     .tile:hover .tile-details {
       display: block;
     }
+    .pdf-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+    }
 
     /* Media Query for responsiveness */
     @media (max-width: 768px) {
@@ -128,10 +135,30 @@
             <div class="project-tiles">
               <!-- Data Analytics Projects -->
               <div class="tile">
+                <img class="tile-image" src="images/hr.jpg" alt="Project 1 Image">
+                <h3 class="tile-title">Analysing Employee Performance for Hr Analytics– Personal Project (May 2023)</h3>
+                <p class="tile-tools">Tools used: Python and MySQL</p>
+                <p class="tile-tools">View project Source Code <a href="https://app.powerbi.com/groups/fc73f497-c330-4359-b4bc-ad746c7b7966/dashboards/b24cd724-e5a6-49a2-a540-d6111c0bd6d7?ctid=3534b3d7-316c-4bc9-9ede-605c860f49d2&pbi_source=linkShare">here</a></a></p>
+                <a class="pdf-link" href="assets/HR Analytics.pdf" target="_blank">Open PDF</a>
+                <div class="tile-details">
+                    <ul class="tile-tools">
+                      <li>Utilized SQL to analyze a real-world database and extract useful information</li>
+                      <li>Preprocessed the data using Python for improved performance</li>
+                      <li>Removed duplicate rows from the dataset</li>
+                      <li>Removed rows with irrelevant data type values in numeric columns</li>
+                      <li>Removed irrelevant values from each column and performed validation checks for data integrity</li>
+                      <li>Exported the cleaned dataset as a .csv file, using UTF-8 encoding</li>
+                      <li>Converted the preprocessed dataset into an SQL file</li>
+                      <li>Improved data quality by removing duplicates and irrelevant data</li>
+                      <li>Ensured data integrity by validating values, checking inconsistencies or discrepancies, and enforcing proper data types, units, or formats.</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="tile">
                 <img class="tile-image" src="images/superstore.jpg" alt="Project 1 Image">
                 <h3 class="tile-title">ANALYSIS OF SUPERSTORE PROFITS – Personal Project (April 2023)</h3>
                 <p class="tile-tools">Tools used: Power BI</p>
-                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <p class="tile-tools">View project Source Code <a href="https://app.powerbi.com/groups/fc73f497-c330-4359-b4bc-ad746c7b7966/dashboards/b24cd724-e5a6-49a2-a540-d6111c0bd6d7?ctid=3534b3d7-316c-4bc9-9ede-605c860f49d2&pbi_source=linkShare">here</a></a></p>
                 <div class="tile-details">
                     <ul class="tile-tools">
                         <li>Conducted an in-depth analysis of Superstore profits by utilizing Power BI to clean, explore, and analyze sales data within a specific timeframe.</li>
@@ -151,7 +178,7 @@
                 <img class="tile-image" src="images/london_bikes.jpg" alt="Project 1 Image">
                 <h3 class="tile-title">ANALYSIS OF LONDON BIKE SHARING DATA – Personal Project</h3>
                 <p class="tile-tools">Tools used: Power BI</p>
-                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <p class="tile-tools">View project Source Code <a href="https://app.powerbi.com/reportEmbed?reportId=1b37f84f-c7b3-47b2-9d50-5938ba46fd61&autoAuth=true&ctid=3534b3d7-316c-4bc9-9ede-605c860f49d2">here</a></a></p>
                 <div class="tile-details">
                     <ul class="tile-tools">
                       <li>Power BI to create an interactive and visually appealing dashboard for analyzing London bike sharing data.</li>
@@ -168,7 +195,7 @@
                 <img class="tile-image" src="images/ligue_1.jpg" alt="Project 1 Image">
                 <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
                 <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
-                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <p class="tile-tools">View project Source Code <a href="https://github.com/sadiksmart0/Analysis-of-Ligue.git">here</a></a></p>
                 <div class="tile-details">
                     <ul class="tile-tools">
                       <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
@@ -191,49 +218,66 @@
             <div class="project-tiles">
               <!-- Data Science Projects -->
               <div class="tile">
-                <img class="tile-image" src="project1_image.jpg" alt="Project 1 Image">
+                <img class="tile-image" src="./images/used_car.jpg" alt="Project 1 Image">
                 <h3 class="tile-title">USED CAR PRICES PREDICTION MODEL - LINEAR REGRESSION</h3>
-                <p class="tile-tools">Tools used: Tool 1, Tool 2</p>
+                <p class="tile-tools">Tools used: Sklearn, Pandas, FastAPI, Streamlit, Postgres, MLFlow, Pandera, Grafana,Python.</p>
                 <div class="tile-details">
-                  <p>Project 1 details and description go here.</p>
+                  <ul class="tile-tools">
+                    <li>Gathered and ingested relevant data on used car prices</li>
+                    <li>Implemented data ingestion pipelines for data preprocessing</li>
+                    <li>Developed a linear regression model using Sklearn</li>
+                    <li>Trained the model using preprocessed data to establish the relationship between car attributes and prices</li>
+                    <li>Deployed the model as a service architecture using FastApi to create a RESTful API</li>
+                    <li>Implemented model monitoring using MLFlow to track performance and trigger retraining when necessary</li>
+                    <li>Used Airflow for workflow management to schedule and execute prediction jobs</li>
+                    <li>Leveraged Grafana for visualization and monitoring of key metrics</li>
+                    <li>Developed a user-friendly interface using Streamlit for easy interaction with the model</li>
+                    <li>Demonstrated proficiency in Python, Sklearn, Airflow, Grafana, FastApi, Streamlit, Postgresql, and MLFlow</li>
+                    <li>Showcased problem-solving abilities, attention to detail, and commitment to delivering high-quality results</li>
+                    <li>Gained valuable experience in machine learning, data engineering, and software development</li>
+                    <li>Provided a practical solution to the real-world problem of used car price prediction.</li>
+                  </ul>
                 </div>
               </div>
               <!-- Add more tiles for Data Analytics projects -->
               <div class="tile">
-                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
+                <img class="tile-image" src="./images/bank.jpg" alt="Project 1 Image">
                 <h3 class="tile-title">BANK MARKETING CAMPAIGN MODEL  - LOGISTIC REGRESSION</h3>
                 <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
-                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <p class="tile-tools">View project Source Code <a href="https://github.com/sadiksmart0/Bank-Marketing.git">here</a></a></p>
                 <div class="tile-details">
                     <ul class="tile-tools">
-                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
-                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
-                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
-                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
-                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
-                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
-                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
-                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
-                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                      <li>Developed a machine learning model to predict customer likelihood of subscribing to a long-term deposit for targeted advertising in a bank marketing campaign.</li>
+                      <li>Utilized the Bank Marketing dataset obtained from the UCI Machine Learning Repository.</li>
+                      <li>Analyzed and preprocessed the dataset, including handling missing values and categorical variables.</li>
+                      <li>Conducted exploratory data analysis to gain insights into the dataset and identify patterns.</li>
+                      <li>Implemented the predictive model using PySpark and Jupyter Notebook.</li>
+                      <li>Leveraged Python libraries such as Pandas for data manipulation and MLflow for tracking and managing experiments.</li>
+                      <li>Fine-tuned the model parameters and evaluated its performance using appropriate metrics.</li>
+                      <li>Collaborated with the marketing team to interpret the model results and provide actionable recommendations.</li>
+                      <li>Successfully delivered a solution that improved the targeting of advertising efforts, leading to cost savings and increased subscription rates.</li>
+                    </ul>
                 </div>
               </div> 
               <!-- Add more tiles for Data Analytics projects -->
               <div class="tile">
-                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
-                <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
-                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
-                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
+                <img class="tile-image" src="images/mood.gif" alt="Project 1 Image">
+                <h3 class="tile-title">MUSIC MOOD DETECTION AND RECOMMENDATION DEEP LEARNING MODEL WITH BERT – Personal Project </h3>
+                <p class="tile-tools">Tools used: Streamlit, TensorFlow, Pandas, Airflow, Python,FastAPI, Postgres, Heroku</p>
+                <p class="tile-tools">View project Source Code <a href="https://github.com/anthonybassaf/music-mood-recognition.git">here</a></a></p>
                 <div class="tile-details">
                     <ul class="tile-tools">
-                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
-                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
-                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
-                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
-                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
-                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
-                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
-                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
-                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                      <li>Collaborated in a group project focused on music mood detection and recommendation.</li>
+                      <li>Utilized a variety of technolologies Deep learning models, BERT and MSD dataset</li>
+                      <li>Conducted exploratory data analysis (EDA) using Streamlit to gain insights into the music dataset and understand its characteristics.</li>
+                      <li>Employed deep learning techniques and TensorFlow framework to develop a mood detection model.</li>
+                      <li>Utilized BERT (Bidirectional Encoder Representations from Transformers) for natural language processing tasks related to mood analysis.</li>
+                      <li>Integrated the developed model into a FastAPI application for efficient and scalable deployment.</li>
+                      <li>Leveraged Airflow for scheduling and managing data pipelines, ensuring smooth data processing and model training.</li>
+                      <li>Utilized Postgres as the database system to store and manage the music metadata and mood-related information.</li>
+                      <li>Deployed the application on Heroku, making it accessible to users for music mood detection and recommendation.</li>
+                      <li>Collaborated with team members, contributing to the project's overall design, implementation, and testing.</li>
+                      <li>Successfully delivered a functional music mood detection and recommendation system, enhancing the user experience and providing personalized music recommendations based on mood.</li>                    </ul>
                 </div>
               </div>               
   
@@ -245,51 +289,25 @@
           <div class="dropdown-content">
             <div class="project-tiles">
               <!-- Data Engineering Projects -->
-              <div class="tile">
-                <img class="tile-image" src="project1_image.jpg" alt="Project 1 Image">
-                <h3 class="tile-title">Project 1</h3>
-                <p class="tile-tools">Tools used: Tool 1, Tool 2</p>
-                <div class="tile-details">
-                  <p>Project 1 details and description go here.</p>
-                </div>
-              </div>
-              <!-- Add more tiles for Data Engineering projects -->
               <!-- Add more tiles for Data Analytics projects -->
               <div class="tile">
-                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
-                <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
-                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
+                <img class="tile-image" src="images/pipeline.png" alt="Project 1 Image">
+                <h3 class="tile-title">END-TO-END DATA PIPELINE FOR YOUTUBE TRENDING DATASET  AWS CLOUD   – Personal Project </h3>
+                <p class="tile-tools">Tools used: AWS S3, AWS GLUE, ATHENA, LAMBDA, QUICKSIGHT, Pandas, Python</p>
                 <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
                 <div class="tile-details">
                     <ul class="tile-tools">
-                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
-                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
-                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
-                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
-                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
-                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
-                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
-                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
-                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
-                </div>
-              </div> 
-              <!-- Add more tiles for Data Analytics projects -->
-              <div class="tile">
-                <img class="tile-image" src="images/pic01.jpg" alt="Project 1 Image">
-                <h3 class="tile-title">STATISTICAL ANALYSIS OF LIGUE 1  – Personal Project </h3>
-                <p class="tile-tools">Tools used: Streamlit, Dash, Plotly Express, Pandas, Python</p>
-                <p class="tile-tools">View project Source Code <a href="#">here</a></a></p>
-                <div class="tile-details">
-                    <ul class="tile-tools">
-                      <li>Conducted a comprehensive statistical analysis of Ligue 1, the top-tier professional football league in France, spanning 11 seasons.</li>
-                      <li>Utilized Streamlit, a powerful data app framework, to publish and present the project report as an interactive and user-friendly platform.</li>
-                      <li>Performed data cleaning and preparation using Python and the Pandas library to ensure the accuracy and integrity of the dataset.</li>
-                      <li>Employed exploratory data analysis (EDA) techniques to gain valuable insights into team performance, focusing on key metrics such as goals scored, goals conceded, points earned, yellow cards, and red cards.</li>
-                      <li>Utilized Plotly Express, a data visualization library, to create visually appealing and informative charts and graphs showcasing the performance trends of different teams over the 11-season period.</li>
-                      <li>Identified and highlighted the best-performing teams in terms of goals scored, points earned, and other relevant metrics, as well as the underperforming teams that struggled in these areas.</li>
-                      <li>Conducted in-depth statistical analysis to uncover patterns, trends, and correlations within the dataset, providing valuable insights into the competitive landscape of Ligue 1.</li>
-                      <li>Leveraged my expertise in data analysis, Python programming, and visualization tools to deliver a comprehensive and insightful analysis of the league's performance dynamics.</li>
-                      <li>Presented the findings and conclusions in a clear and concise manner, making the project report accessible to both technical and non-technical stakeholders.</li>                    </ul>
+                      <li>Created an end-to-end data pipeline for processing YouTube trending dataset using AWS Cloud</li> 
+                      <li>Utilized AWS S3 for data storage and AWS Glue for data cataloging and ETL (Extract, Transform, Load)</li> 
+                      <li>Leveraged AWS Athena for querying and analyzing the dataset</li> 
+                      <li>Developed Lambda functions to automate data ingestion and processing tasks</li> 
+                      <li>Used Pandas and Python for data manipulation, transformation, and cleaning</li> 
+                      <li>Integrated QuickSight for data visualization and reporting</li> 
+                      <li>Implemented source code for the project to provide transparency and accessibility</li> 
+                      <li>Demonstrated proficiency in AWS services, Pandas, and Python</li> 
+                      <li>Showcased ability to design and implement a scalable and efficient data pipeline</li> 
+                      <li>Gained experience in working with large datasets and handling data transformations and analysis in a cloud environment.</li>                     </ul>
+                      <img class="tile-image" src="images/analytics.png" alt="Project 1 Image">
                 </div>
               </div>                 
             </div>
